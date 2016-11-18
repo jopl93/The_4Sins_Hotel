@@ -1,0 +1,28 @@
+Git kommandoer
+
+
+For hente:
+
+- ALTID først pull:
+
+- Kommando: git pull origin master ( -v )
+
+- Altid godt at lave status inden commit og push - det viser Status på repository:
+
+- Kommando: git status 
+
+
+For at pushe:
+
+- git status
+
+- git add --all (Tilføjer alle filer til det lokale repository) SKAL GØRES!!!!!
+
+- git commit -m "BESKED" 
+
+- Husk at pull'e efter du har commit'et og inden du pusher
+
+- git push origin master ( -v)
+
+
+
