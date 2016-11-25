@@ -3,8 +3,11 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Lobbyjazz</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
@@ -15,6 +18,7 @@
     <sprite>sprites\sprite6</sprite>
     <sprite>sprites\mommanigga</sprite>
     <sprite>sprites\TextBox_spr</sprite>
+    <sprite>sprites\lobbyroom_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -28,6 +32,7 @@
     <background>background\trapper</background>
     <background>background\mansiontiles</background>
     <background>background\background10</background>
+    <background>background\lobbyroom</background>
   </backgrounds>
   <paths name="paths"/>
   <fonts name="fonts">
@@ -50,6 +55,9 @@
     <object>objects\controller_obj</object>
     <object>objects\Fatlady_obj</object>
     <object>objects\TextBox_obj</object>
+    <object>objects\cane_obj</object>
+    <object>objects\fatladymove_obj</object>
+    <object>objects\Lobbycontrollermusik_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\cutscene_room</room>
