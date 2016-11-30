@@ -30,7 +30,6 @@
     <background>background\background10</background>
   </backgrounds>
   <paths name="paths"/>
-  <scripts name="scripts"/>
   <fonts name="fonts">
     <font>fonts\font_barometer</font>
     <font>fonts\font_Default</font>
