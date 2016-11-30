@@ -133,8 +133,9 @@ draw_set_halign(fa_left)
 
 
 
-draw_sprite(TextBox_spr,0,view_xview[0],view_yview[0]+240)
-draw_text(view_xview[0],view_yview[0]+240-75,out)
+draw_sprite(TextBox_spr,0,view_xview[1],view_yview[1])
+draw_text(view_xview[1]+15,view_yview[1] + 15,out)
+
 </string>
           </argument>
         </arguments>

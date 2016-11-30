@@ -52,8 +52,8 @@
     <object>objects\TextBox_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\cutscene_room</room>
     <room>rooms\lobby</room>
+    <room>rooms\cutscene_room</room>
     <room>rooms\first_floor</room>
     <room>rooms\roomClean</room>
   </rooms>
