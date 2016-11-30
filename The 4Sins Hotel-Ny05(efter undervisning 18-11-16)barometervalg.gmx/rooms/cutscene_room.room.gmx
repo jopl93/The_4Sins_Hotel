@@ -57,6 +57,8 @@
     <instance objName="cutscenedoor_obj" x="1152" y="192" name="inst_F958CBE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="barometercontroller_obj" x="256" y="0" name="inst_7F793077" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Lobbycontrollermusik_obj" x="32" y="0" name="inst_1AAFE9BB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fatlady_obj" x="1088" y="224" name="inst_20D9B322" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="cane_obj" x="864" y="224" name="inst_B0AE0F9E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="672" y="32" w="32" h="32" xo="64" yo="32" id="10000485" name="inst_8E4EE557" depth="1001001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
