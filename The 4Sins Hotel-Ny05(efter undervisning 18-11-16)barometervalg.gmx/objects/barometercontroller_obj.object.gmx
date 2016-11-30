@@ -81,7 +81,7 @@
           <argument>
             <kind>1</kind>
             <string>
-if (evil==0)
+if (evil==-1)
 {
 game_end();
 }
@@ -131,22 +131,38 @@ game_end();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (evil==3)
+            <string>// her er processen for vores tegnede barometer, vi bruger funktionen (draw_sprite) for ar
+//vise spilleren
+if (evil==6)
 {
-draw_sprite(barometer,0,40,30);
+draw_sprite(barometer,6,40,30);
+}
+if (evil==5)
+{
+draw_sprite(barometer,5,40,30);
+}
+if (evil==4)
+{
+draw_sprite(barometer,4,40,30);
+}
+
+if (evil==3)
+{
+draw_sprite(barometer,3,40,30);
 }
 if (evil==2)
 {
-draw_sprite(barometer,1,40,30);
+draw_sprite(barometer,2,40,30);
 }
 if (evil==1)
 {
-draw_sprite(barometer,2,40,30);
+draw_sprite(barometer,1,40,30);
 }
 if (evil==0)
 {
-game_end();
+draw_sprite(barometer,0,40,30);
 }
+
 </string>
           </argument>
         </arguments>
