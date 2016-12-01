@@ -19,6 +19,9 @@
     <sprite>sprites\mommanigga</sprite>
     <sprite>sprites\TextBox_spr</sprite>
     <sprite>sprites\lobbyroom_spr</sprite>
+    <sprite>sprites\barometer_spr</sprite>
+    <sprite>sprites\barometer</sprite>
+    <sprite>sprites\cane_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -35,6 +38,9 @@
     <background>background\lobbyroom</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\script0.gml</script>
+  </scripts>
   <fonts name="fonts">
     <font>fonts\font_barometer</font>
     <font>fonts\font_Default</font>
@@ -58,10 +64,11 @@
     <object>objects\cane_obj</object>
     <object>objects\fatladymove_obj</object>
     <object>objects\Lobbycontrollermusik_obj</object>
+    <object>objects\barometer_obj</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\lobby</room>
     <room>rooms\cutscene_room</room>
+    <room>rooms\lobby</room>
     <room>rooms\first_floor</room>
     <room>rooms\roomClean</room>
   </rooms>
