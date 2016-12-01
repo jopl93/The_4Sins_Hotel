@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>evil=3;
+            <string>global.evil=3;
 </string>
           </argument>
         </arguments>
@@ -48,13 +48,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (evil &gt;=0)
+            <string>if (global.evil &gt;=0)
  {
      {
-     evil = evil-1;
+     global.evil = global.evil-1;
      }
  }   
- if(evil &lt;= 0)
+ if(global.evil &lt;= 0)
  {
    
  }  
@@ -81,7 +81,7 @@
           <argument>
             <kind>1</kind>
             <string>
-if (evil==-1)
+if (global.evil==-1)
 {
 game_end();
 }
@@ -133,32 +133,32 @@ game_end();
             <kind>1</kind>
             <string>// her er processen for vores tegnede barometer, vi bruger funktionen (draw_sprite) for ar
 //vise spilleren
-if (evil==6)
+if (global.evil==6)
 {
 draw_sprite(barometer,6,40,30);
 }
-if (evil==5)
+if (global.evil==5)
 {
 draw_sprite(barometer,5,40,30);
 }
-if (evil==4)
+if (global.evil==4)
 {
 draw_sprite(barometer,4,40,30);
 }
 
-if (evil==3)
+if (global.evil==3)
 {
 draw_sprite(barometer,3,40,30);
 }
-if (evil==2)
+if (global.evil==2)
 {
 draw_sprite(barometer,2,40,30);
 }
-if (evil==1)
+if (global.evil==1)
 {
 draw_sprite(barometer,1,40,30);
 }
-if (evil==0)
+if (global.evil==0)
 {
 draw_sprite(barometer,0,40,30);
 }
