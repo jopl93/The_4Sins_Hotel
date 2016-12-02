@@ -7,6 +7,7 @@
   <NewExtensions/>
   <sounds name="sound">
     <sound>sound\Lobbyjazz</sound>
+    <sound>sound\Det_svinger_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
