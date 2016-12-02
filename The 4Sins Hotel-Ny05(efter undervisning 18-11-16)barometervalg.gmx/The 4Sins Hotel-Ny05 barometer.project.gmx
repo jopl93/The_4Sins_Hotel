@@ -74,8 +74,6 @@
     <room>rooms\cutscene_room</room>
     <room>rooms\lobby</room>
     <room>rooms\first_floor</room>
-    <room>rooms\room4</room>
-    <room>rooms\roomClean</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
