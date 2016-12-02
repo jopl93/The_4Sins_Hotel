@@ -180,7 +180,16 @@ depth = -y
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>evil=+1;
+            <string>if (global.evil &gt;=0)
+ {
+     {
+     global.evil = global.evil+1;
+     }
+ }   
+ if(global.evil &lt;= 0)
+ {
+   
+ }  
 </string>
           </argument>
         </arguments>
