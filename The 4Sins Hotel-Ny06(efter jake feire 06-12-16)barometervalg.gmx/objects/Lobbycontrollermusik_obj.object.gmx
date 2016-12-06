@@ -8,7 +8,7 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="7" enumb="5">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,22 +25,29 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// script_execute(choose(music_scr))
-// if room = (cutscene_room)
- //{
- //audio_play_sound(Lobbyjazz,true,true);
- //}
-
-//  if room = (first_floor)
- //{
- //audio_play_sound(Lobbyjazz2,true,true);
- //}
+            <string>if (room == cutscene_room || room == lobby)
+{ 
+   // if audio_exists (Det_svinger_sound) = true
+    //{ 
+    audio_stop_sound (Klaver_spil_sound);
+    //}
+   
+}
+if (room == first_floor)
+    {
+    audio_stop_sound (Jazz_musik_sound);
+    }
+    
+    if (room == room4)
+    {
+    audio_stop_sound (Elevator_puzzle_sound);
+    }
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="7" enumb="4">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -57,36 +64,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//if room = (cutscene_room)
-//{
-//global.music = 1;
-//}
-//if room = (first_floor)
-//{
-//global.music = 2;
-//}
-//if global.music = (1)
- 
- if room = cutscene_room
-{
-if !audio_is_playing(Lobbyjazz)
- audio_play_sound(Lobbyjazz,1,true);
-}
-//if global.music = (2)
- if room = first_floor
-{
-    if audio_is_playing(Lobbyjazz)
+            <string>if ( room == cutscene_room || room == lobby)
     {
-    audio_stop_sound(Lobbyjazz);
-    }
-}
- if room = first_floor
- {
-    if !audio_is_playing(Lobbyjazz2)
-  {
-    audio_play_sound(Lobbyjazz2,true,true);
-  } 
-}
+   audio_play_sound(Klaver_spil_sound,true,true);
+   audio_sound_gain(Klaver_spil_sound, 0.4, 0);
+   }
+     
+      
+     if ( room == first_floor)
+     { audio_play_sound (Jazz_musik_sound, true, true);
+     audio_sound_gain(Jazz_musik_sound, 0.4, 0);
+     }
+      
+     if ( room == room4)
+     { 
+     audio_play_sound (Elevator_puzzle_sound,true,true);
+     audio_sound_gain(Jazz_musik_sound, 0.4, 0);
+     }
 </string>
           </argument>
         </arguments>

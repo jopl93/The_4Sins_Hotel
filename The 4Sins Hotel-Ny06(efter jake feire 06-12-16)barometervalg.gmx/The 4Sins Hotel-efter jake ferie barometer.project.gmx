@@ -6,9 +6,9 @@
   <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\Lobbyjazz</sound>
-    <sound>sound\sound1</sound>
-    <sound>sound\Lobbyjazz2</sound>
+    <sound>sound\Klaver_spil_sound</sound>
+    <sound>sound\Jazz_musik_sound</sound>
+    <sound>sound\Elevator_puzzle_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
