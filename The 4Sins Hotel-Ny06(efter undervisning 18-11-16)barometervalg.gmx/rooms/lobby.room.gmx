@@ -54,8 +54,8 @@
     <instance objName="Gulv_usynligt" x="22" y="308" name="inst_31DCCEF2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Gulv_usynligt" x="-544" y="309" name="inst_3D62A8D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Spiller" x="928" y="224" name="inst_DB85540E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="forward_stairs" x="1152" y="192" name="inst_DC219FFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Fatlady_obj" x="1056" y="224" name="inst_7C07259A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="forward_stairs" x="1120" y="160" name="inst_DC219FFB" locked="0" code="" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Fatlady_obj" x="1120" y="192" name="inst_7C07259A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="controller_obj" x="160" y="64" name="inst_B7817986" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>

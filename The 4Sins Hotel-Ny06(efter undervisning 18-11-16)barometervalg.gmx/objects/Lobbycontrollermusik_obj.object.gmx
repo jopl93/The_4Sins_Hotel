@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,31 +25,124 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>global.soundArray[0]=Det_svinger_sound
+global.soundArray[1]=Game_main_sound
+global.soundArray[2]=Elevator_puzzle_sound
+
+
+
+
+/*if room = (cutscene_room) 
+    {
+     var snd = audio_play_sound(Det_svinger_sound,true,true);
+   audio_sound_gain(snd, 0.4, 0);
+    } 
+    */
+</string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
-        <id>211</id>
-        <kind>0</kind>
+        <id>603</id>
+        <kind>7</kind>
         <userelative>0</userelative>
         <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>1</exetype>
-        <functionname>action_sound</functionname>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
         <codestring></codestring>
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
         <arguments>
           <argument>
-            <kind>6</kind>
-            <sound>Lobbyjazz</sound>
+            <kind>1</kind>
+            <string>/*if room = (first_floor)
+{ 
+    if audio_exists (Det_svinger_sound) = true
+    { 
+    audio_stop_sound (Det_svinger_sound);
+    }
+   
+}
+
+/*if room = (lobby) 
+    {
+     var snd = audio_play_sound(Det_svinger_sound,true,true);
+   audio_sound_gain(snd, 0.4, 0);
+    } */
+</string>
           </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="5">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
           <argument>
-            <kind>3</kind>
-            <string>1</string>
+            <kind>1</kind>
+            <string>//if (room = lobby) &amp;&amp; room_previous(0)  {
+
+//sound_stop(Det_svinger_sound)
+//sound_play(Lobbyjazz)
+
+//}
+
+if (room == cutscene_room)
+{ 
+   // if audio_exists (Det_svinger_sound) = true
+    //{ 
+    audio_stop_sound (Det_svinger_sound);
+    //}
+   
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if ( room == cutscene_room || room == lobby)
+    {
+   audio_play_sound(Det_svinger_sound,true,true);
+   }
+     //audio_sound_gain(snd, 0.4, 0);
+      //} 
+    //  if ( room = first_floor)
+      
+    
+</string>
           </argument>
         </arguments>
       </action>

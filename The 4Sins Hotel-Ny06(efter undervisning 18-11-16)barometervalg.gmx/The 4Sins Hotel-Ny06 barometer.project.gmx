@@ -6,7 +6,9 @@
   <datafiles number="2" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\Lobbyjazz</sound>
+    <sound>sound\Det_svinger_sound</sound>
+    <sound>sound\Game_main_sound</sound>
+    <sound>sound\Elevator_puzzle_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -42,6 +44,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_Dialog_Switch.gml</script>
+    <script>scripts\sound_script.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font_barometer</font>
