@@ -22,6 +22,7 @@
     <sprite>sprites\heart_spr</sprite>
     <sprite>sprites\red_blue_color_spr0</sprite>
     <sprite>sprites\redblue_color_spr</sprite>
+    <sprite>sprites\lobby_new</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
