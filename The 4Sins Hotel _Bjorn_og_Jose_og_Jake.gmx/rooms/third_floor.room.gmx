@@ -233,7 +233,6 @@
     <instance objName="SolidBlock" x="0" y="288" name="inst_2A7DCED6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="0" y="256" name="inst_195C7F80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="0" y="288" name="inst_C3A5AFD4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="Spiller" x="1312" y="128" name="inst_B3C2A0CB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="backwards_stairs" x="1312" y="64" name="inst_EB7F82BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
