@@ -25,20 +25,19 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Dialog_text 
-//var dialog = vk_space
-//if keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10
-//{
-//text1 = string("Please help me.#I Have lost my cane and i can't get up")
-//text2 = string("What Should I do?#Z. I help her find her cane.#X.Forget her and move on")
-//text3 = string(scr_Dialog_Switch(string("text3")))
-//}
-//talk = 1
+            <string>
+if keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10
+{
+text1 = string("Please help me.#I Have lost my cane and i can't get up")
+text2 = string("What Should I do?#Z. I help her find her cane.#X.Forget her and move on")
+text3 = string(scr_Dialog_Switch(string("text3")))
+}
+talk = 1
 
-//global.text = true
+global.text = true
 
-//out = string("")
-//spd = 0
+out = string("")
+spd = 0
 </string>
           </argument>
         </arguments>
@@ -84,44 +83,44 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Dialog_Textbox_Control
-//if talk = 1 {
-//out = string_copy(text1,1,spd)
-//}
+            <string>
+if talk = 1 {
+out = string_copy(text1,1,spd)
+}
 
-//if talk = 2 {
-//out = string_copy(text2,1,spd)
-//}
+if talk = 2 {
+out = string_copy(text2,1,spd)
+}
 
-//if talk = 3 {
-//out = string_copy(text3,1,spd)
-//}
+if talk = 3 {
+out = string_copy(text3,1,spd)
+}
 
-//spd +=2
+spd +=2
 
-//if talk = 3 {
+if talk = 3 {
 
-//if keyboard_check(ord("Z")) {
-//scr_Dialog_Switch(string("text3"))
-//}
+if keyboard_check(ord("Z")) {
+scr_Dialog_Switch(string("text3"))
+}
 
-//if keyboard_check(ord("X")) {
-//scr_Dialog_Switch(string("text3"))
-//}
-//}
-//if keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("X")) {
-//dialog = true
-//talk +=1
-//spd = 0
+if keyboard_check(ord("X")) {
+scr_Dialog_Switch(string("text3"))
+}
+}
+if keyboard_check_pressed(vk_space) or keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("X")) {
+dialog = true
+talk +=1
+spd = 0
 
-//if keyboard_check_pressed(vk_space) &amp;&amp; talk = 2
-//{
-//dialog = false
-//}
-//}
+if keyboard_check_pressed(vk_space) &amp;&amp; talk = 2
+{
+dialog = false
+}
+}
 
-//if talk &gt; 3 
-   // instance_destroy()
+if talk &gt; 3 
+   instance_destroy()
     
 </string>
           </argument>
@@ -145,15 +144,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Dialog_Textbox_Position
-//draw_set_font(font_Default)
-//draw_set_valign(fa_top)
-//draw_set_halign(fa_left)
+            <string>
+draw_set_font(font_Default)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
 
 
 
-//draw_sprite(TextBox_spr,0,view_xview[1],view_yview[1])
-//draw_text(view_xview[1]+15,view_yview[1] + 15,out)
+draw_sprite(TextBox_spr,0,view_xview[1],view_yview[1])
+draw_text(view_xview[1]+15,view_yview[1] + 15,out)
 
 </string>
           </argument>
