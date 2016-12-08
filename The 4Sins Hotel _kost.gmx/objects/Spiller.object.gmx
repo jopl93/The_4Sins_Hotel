@@ -65,7 +65,7 @@ return (false);
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_fatlady">
+    <event eventtype="4" ename="fatlady_obj">
       <action>
         <libid>1</libid>
         <id>101</id>

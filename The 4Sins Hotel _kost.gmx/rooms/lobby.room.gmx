@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="Spiller" x="32" y="224" name="inst_33F1AAE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fatlady" x="1162" y="129" name="inst_3A82005E" locked="0" code="" scaleX="1.28571426868439" scaleY="1.31746029853821" colour="4294967295" rotation="0"/>
+    <instance objName="fatlady_obj" x="1162" y="129" name="inst_3A82005E" locked="0" code="" scaleX="1.28571426868439" scaleY="1.31746029853821" colour="4294967295" rotation="0"/>
     <instance objName="cane_obj" x="256" y="192" name="inst_2EAED4E5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="128" y="192" name="inst_E4754AF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="160" y="192" name="inst_4CEE0EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
