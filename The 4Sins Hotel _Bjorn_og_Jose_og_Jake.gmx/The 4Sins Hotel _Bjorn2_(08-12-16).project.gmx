@@ -4,25 +4,25 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Klaver_spil_sound</sound>
+    <sound>sound\Jazz_musik_sound</sound>
+    <sound>sound\Elevator_puzzle_sound</sound>
+    <sound>sound\Ouch_sound</sound>
+    <sound>sound\Positive_sound</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
-    <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite_first</sprite>
     <sprite>sprites\cleanroomdoor_spr</sprite>
-    <sprite>sprites\spider_spr</sprite>
-    <sprite>sprites\web_spr</sprite>
-    <sprite>sprites\sprite6</sprite>
-    <sprite>sprites\mommanigga</sprite>
-    <sprite>sprites\TextBox_spr</sprite>
-    <sprite>sprites\Receptionist_spr</sprite>
-    <sprite>sprites\Dialog_Teenager_spr</sprite>
-    <sprite>sprites\Teenager_spr</sprite>
-    <sprite>sprites\Chokolade_spr</sprite>
-    <sprite>sprites\Hotel_Broom_spr</sprite>
-    <sprite>sprites\Walk_right</sprite>
-    <sprite>sprites\Walk_left</sprite>
-    <sprite>sprites\Stand_spr</sprite>
+    <sprite>sprites\spr_cane</sprite>
+    <sprite>sprites\spr_fatlady</sprite>
+    <sprite>sprites\solidblock_obj</sprite>
+    <sprite>sprites\barometer</sprite>
+    <sprite>sprites\heart_spr</sprite>
+    <sprite>sprites\red_blue_color_spr0</sprite>
+    <sprite>sprites\redblue_color_spr</sprite>
+    <sprite>sprites\lobby_new</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -36,12 +36,16 @@
     <background>background\trapper</background>
     <background>background\mansiontiles</background>
     <background>background\background10</background>
+    <background>background\background11</background>
+    <background>background\background13</background>
+    <background>background\background14</background>
+    <background>background\background15</background>
+    <background>background\background16</background>
+    <background>background\background17</background>
+    <background>background\menu</background>
+    <background>background\menu_new</background>
   </backgrounds>
   <paths name="paths"/>
-  <fonts name="fonts">
-    <font>fonts\font_barometer</font>
-    <font>fonts\font_Default</font>
-  </fonts>
   <objects name="objects">
     <object>objects\Spiller</object>
     <object>objects\Gulv_usynligt</object>
@@ -49,20 +53,25 @@
     <object>objects\cutscene_object</object>
     <object>objects\guyClean</object>
     <object>objects\cutscenedoor_obj</object>
-    <object>objects\web_obj</object>
-    <object>objects\spider_obj</object>
-    <object>objects\flamethrower_obj</object>
-    <object>objects\flamethrowerhitbox_spr</object>
-    <object>objects\flamethrowerstill_obj</object>
-    <object>objects\barometercontroller_obj</object>
-    <object>objects\controller_obj</object>
-    <object>objects\Fatlady_obj</object>
-    <object>objects\TextBox_obj</object>
+    <object>objects\cane_obj</object>
+    <object>objects\obj_fatlady</object>
+    <object>objects\SolidBlock</object>
+    <object>objects\music_controller</object>
+    <object>objects\backwards_stairs</object>
+    <object>objects\barometer_controller</object>
+    <object>objects\Heartcontroller_obj</object>
+    <object>objects\red_blue_color_obj</object>
+    <object>objects\red_blue_color_obj0</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\menu_room</room>
     <room>rooms\lobby</room>
-    <room>rooms\cutscene_room</room>
     <room>rooms\first_floor</room>
+    <room>rooms\second_floor</room>
+    <room>rooms\third_floor</room>
+    <room>rooms\cutscene_room</room>
+    <room>rooms\lobby_old</room>
+    <room>rooms\first_floor_old</room>
     <room>rooms\roomClean</room>
   </rooms>
   <help>
