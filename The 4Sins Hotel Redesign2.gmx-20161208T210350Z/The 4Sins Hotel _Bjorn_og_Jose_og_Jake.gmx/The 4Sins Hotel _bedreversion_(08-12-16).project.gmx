@@ -23,7 +23,11 @@
     <sprite>sprites\red_blue_color_spr0</sprite>
     <sprite>sprites\redblue_color_spr</sprite>
     <sprite>sprites\lobby_new</sprite>
+<<<<<<< HEAD:The 4Sins Hotel Redesign.gmx-20161208T210350Z/The 4Sins Hotel _Bjorn_og_Jose_og_Jake.gmx/The 4Sins Hotel _Bjorn2_(08-12-16).project.gmx
     <sprite>sprites\sprite11</sprite>
+=======
+    <sprite>sprites\Mainguy_spr</sprite>
+>>>>>>> 2f10001fdbb4d04432afd3060bf382ffa92456ef:The 4Sins Hotel Redesign2.gmx-20161208T210350Z/The 4Sins Hotel _Bjorn_og_Jose_og_Jake.gmx/The 4Sins Hotel _bedreversion_(08-12-16).project.gmx
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -65,6 +69,7 @@
     <object>objects\Heartcontroller_obj</object>
     <object>objects\red_blue_color_obj</object>
     <object>objects\red_blue_color_obj0</object>
+    <object>objects\Mainguy_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

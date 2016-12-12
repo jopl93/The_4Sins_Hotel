@@ -92,19 +92,23 @@ draw_sprite(heart_spr,0,40,-87);
 
 if (global.sweet==2)
 {
-draw_sprite(heart_spr,1,40,60);
+draw_sprite(heart_spr,1,40,-87);
 }
 if (global.sweet==3)
 {
-draw_sprite(heart_spr,2,40,60);
+draw_sprite(heart_spr,2,40,-87);
 }
 if (global.sweet==4)
 {
-draw_sprite(heart_spr,3,40,60);
+draw_sprite(heart_spr,3,40,-87);
 }
 if (global.sweet==5)
 {
-draw_sprite(heart_spr,4,40,60);
+draw_sprite(heart_spr,4,40,-87);
+}
+if (global.sweet &gt;=5)
+{
+draw_sprite(heart_spr,4,40,-87);
 }
 </string>
           </argument>
