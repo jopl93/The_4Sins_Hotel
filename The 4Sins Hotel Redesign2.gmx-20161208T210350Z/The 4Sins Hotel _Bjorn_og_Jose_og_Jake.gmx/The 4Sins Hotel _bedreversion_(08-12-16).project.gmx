@@ -23,6 +23,7 @@
     <sprite>sprites\red_blue_color_spr0</sprite>
     <sprite>sprites\redblue_color_spr</sprite>
     <sprite>sprites\lobby_new</sprite>
+    <sprite>sprites\Mainguy_spr</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -64,6 +65,7 @@
     <object>objects\Heartcontroller_obj</object>
     <object>objects\red_blue_color_obj</object>
     <object>objects\red_blue_color_obj0</object>
+    <object>objects\Mainguy_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>
