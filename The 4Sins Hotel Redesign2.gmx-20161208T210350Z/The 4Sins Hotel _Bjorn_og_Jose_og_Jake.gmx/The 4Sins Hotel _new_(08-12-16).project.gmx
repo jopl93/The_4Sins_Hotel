@@ -28,6 +28,10 @@
     <sprite>sprites\sprite13</sprite>
     <sprite>sprites\sprite14</sprite>
     <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\sprite_cane</sprite>
+    <sprite>sprites\sprite_stand</sprite>
+    <sprite>sprites\sprite_right</sprite>
+    <sprite>sprites\sprite_left</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
