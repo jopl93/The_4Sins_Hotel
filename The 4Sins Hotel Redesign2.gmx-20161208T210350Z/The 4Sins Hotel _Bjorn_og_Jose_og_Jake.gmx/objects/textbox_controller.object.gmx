@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -25,14 +25,33 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// her sætter vi op hvad vores hjerte skal starte med i værdi.
-global.sweet=1;
+            <string>/// Dialog_text
+global.dialog = 0
+//Hvis brugeren trykker space ned, og er mindre end 10 pixels fra den fede dame
+if (keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(obj_fatlady) &lt; 10)
+{
+text1 = string("Please help me. #I lost my cane and I can't get up")
+text2 = string("What should i do. ##1. I help her of course#2. Forget that")
+textvalg1 = string("Ok. Wait here and I will get your cane")
+textvalg2 = string("Screw that")
+}
+
+//Talk er presat til at være 1
+talk = 1;
+//Global.text bruges for at stoppe bevægelse af spilleren under textbox
+global.text = true;
+
+//out er outputet som indsætter strings i textboxen
+out = string("");
+
+//spd er speed af texten presat til 0
+spd = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="1" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,17 +68,78 @@ global.sweet=1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// her for vi hjertet til at skifte værdi
-if (global.sweet &gt;=0)
- {
-     {
-     global.sweet = global.sweet+1;
-     }
- }   
- if(global.sweet &gt;= 4)
- {
-   
- }  
+            <string>//Spilleren kan bevæge sig igen
+global.text = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Dialog_Textbox_Control
+
+spd +=2
+
+if global.dialog = 0
+{
+if (talk == 1) {
+if (keyboard_check_pressed(vk_space)) {
+talk +=1
+}
+out = string_copy(text1,1,spd)
+colour_get_blue(1)
+}
+
+if (talk == 2) {
+
+out = string_copy(text2,1,spd)
+colour_get_green(1)
+}
+
+
+if (talk == 2) {
+
+
+if keyboard_check_pressed(ord("Z"))  {
+out = string_copy(textvalg1,1,spd)
+talk +=1
+
+}
+
+if keyboard_check_pressed(ord("X"))  {
+out = string_copy(textvalg2,1,spd)
+talk +=1
+
+}
+}
+
+}
+
+
+if textvalg1 {
+    instance_destroy()
+    talk +=1
+}
+if talk = 5 {
+global.dialog = +1
+}
+
 </string>
           </argument>
         </arguments>
@@ -82,55 +162,18 @@ if (global.sweet &gt;=0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// her er processen for vores tegnede hjertemåler, vi bruger funktionen (draw_sprite) for ar
-//vise spilleren, visuelt hvor langt de er nået til enden. 
-// så alle punkterne er defineret med en værdi, som så har et billede tillagt sig.
-if (global.sweet==1)
-{
-draw_sprite(heart_spr,0,400,-87);
-}
+            <string>///Dialog_Textbox_Position
+draw_set_font(font_Default)
+draw_set_valign(fa_top)
+draw_set_halign(fa_left)
 
-if (global.sweet==2)
-{
-draw_sprite(heart_spr,1,400,-87);
-}
-if (global.sweet==3)
-{
-draw_sprite(heart_spr,2,400,-87);
-}
-if (global.sweet==4)
-{
-draw_sprite(heart_spr,3,400,-87);
-}
-if (global.sweet==5)
-{
-draw_sprite(heart_spr,4,400,-87);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="10" enumb="87">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>//alarm for at der går lidt tid før den skifter.
-alarm[0]= room_speed * 1.2;
-      
+
+
+draw_sprite(textBox_spr,0,view_xview[1],view_yview[1])
+draw_text(view_xview[1]+15,view_yview[1] + 15,out)
+
+
+
 </string>
           </argument>
         </arguments>

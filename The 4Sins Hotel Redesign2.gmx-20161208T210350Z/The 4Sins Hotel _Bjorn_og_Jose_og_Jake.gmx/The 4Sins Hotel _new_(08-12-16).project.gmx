@@ -10,6 +10,8 @@
     <sound>sound\Elevator_puzzle_sound</sound>
     <sound>sound\Ouch_sound</sound>
     <sound>sound\Positive_sound</sound>
+    <sound>sound\gotItem_sound</sound>
+    <sound>sound\hi_sound</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
@@ -32,6 +34,9 @@
     <sprite>sprites\sprite_stand</sprite>
     <sprite>sprites\sprite_right</sprite>
     <sprite>sprites\sprite_left</sprite>
+    <sprite>sprites\textBox_spr</sprite>
+    <sprite>sprites\fatlady_sprite</sprite>
+    <sprite>sprites\receptionist_sprite</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -57,6 +62,9 @@
     <background>background\background20</background>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\font_Default</font>
+  </fonts>
   <objects name="objects">
     <object>objects\Spiller</object>
     <object>objects\Gulv_usynligt</object>
@@ -79,6 +87,8 @@
     <object>objects\obj_Not_there_ending</object>
     <object>objects\obj_Stay_together_ending</object>
     <object>objects\obj_Proposal_ending</object>
+    <object>objects\textbox_controller</object>
+    <object>objects\receptionist_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\menu_room</room>

@@ -139,32 +139,32 @@ alarm[0]= room_speed * 1.5;
 // til hver værdi er der tillagt et billede, som reflektere værdien.
 if (global.evil==6)
 {
-draw_sprite(barometer,6,40,30);
+draw_sprite(barometer,6,400,30);
 }
 if (global.evil==5)
 {
-draw_sprite(barometer,5,40,30);
+draw_sprite(barometer,5,400,30);
 }
 if (global.evil==4)
 {
-draw_sprite(barometer,4,40,30);
+draw_sprite(barometer,4,400,30);
 }
 
 if (global.evil==3)
 {
-draw_sprite(barometer,3,40,30);
+draw_sprite(barometer,3,400,30);
 }
 if (global.evil==2)
 {
-draw_sprite(barometer,2,40,30);
+draw_sprite(barometer,2,400,30);
 }
 if (global.evil==1)
 {
-draw_sprite(barometer,1,40,30);
+draw_sprite(barometer,1,400,30);
 }
 if (global.evil==0)
 {
-draw_sprite(barometer,0,40,30);
+draw_sprite(barometer,0,400,30);
 }
 
 </string>

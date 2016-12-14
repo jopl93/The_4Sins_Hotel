@@ -52,14 +52,13 @@
   </views>
   <instances>
     <instance objName="Spiller" x="32" y="224" name="inst_33F1AAE9" locked="0" code="" scaleX="1.34375" scaleY="1.5686274766922" colour="4294967295" rotation="0"/>
-    <instance objName="obj_fatlady" x="1280" y="128" name="inst_3A82005E" locked="0" code="" scaleX="1.28571426868439" scaleY="1.31746029853821" colour="4294967295" rotation="0"/>
     <instance objName="cane_obj" x="480" y="160" name="inst_2EAED4E5" locked="0" code="" scaleX="0.200000002980232" scaleY="0.157894730567932" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="128" y="96" name="inst_E4754AF9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="160" y="96" name="inst_4CEE0EB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="320" y="128" name="inst_3F3723A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="352" y="128" name="inst_F24AA2B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="384" y="128" name="inst_9374BF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="416" y="128" name="inst_65D3B97A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="320" y="96" name="inst_3F3723A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="352" y="96" name="inst_F24AA2B3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="384" y="96" name="inst_9374BF96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="416" y="96" name="inst_65D3B97A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="448" y="128" name="inst_498D9461" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="288" y="128" name="inst_9BDA38C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="544" y="96" name="inst_AAEB40A4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -92,8 +91,8 @@
     <instance objName="SolidBlock" x="0" y="128" name="inst_F26F0BF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1024" y="128" name="inst_9D89C54B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1056" y="128" name="inst_8B35A72C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="1248" y="128" name="inst_00AEA23A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="1248" y="96" name="inst_B5356BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="1248" y="96" name="inst_00AEA23A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="1216" y="96" name="inst_B5356BF4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1408" y="96" name="inst_1F35DFDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1408" y="32" name="inst_58CCA339" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1376" y="0" name="inst_7B97A2FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -168,9 +167,11 @@
     <instance objName="Heartcontroller_obj" x="64" y="0" name="inst_926439FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1088" y="128" name="inst_82670912" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="SolidBlock" x="1120" y="128" name="inst_4F5BD06A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="1152" y="128" name="inst_8C136834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="1184" y="128" name="inst_09C11B30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="SolidBlock" x="1216" y="128" name="inst_DFD51D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="1120" y="96" name="inst_8C136834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="1152" y="96" name="inst_09C11B30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SolidBlock" x="1184" y="96" name="inst_DFD51D4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_fatlady" x="1280" y="128" name="inst_5B4607EE" locked="0" code="" scaleX="0.349999994039536" scaleY="0.25" colour="4294967295" rotation="0"/>
+    <instance objName="receptionist_obj" x="361" y="103" name="inst_6C32EFE0" locked="0" code="" scaleX="0.800000011920929" scaleY="1.10000002384186" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="elevator" x="1102" y="73" w="160" h="128" xo="0" yo="32" id="10001452" name="inst_519345E9" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
