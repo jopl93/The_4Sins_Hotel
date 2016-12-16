@@ -28,35 +28,34 @@
             <string>/// Dialog_text
 
 //Hvis brugeren trykker space ned, og er mindre end 10 pixels fra den fede dame
+ talk = 1;
 
-    if (keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10)
-    {
     text1 = string("Please help me. #I lost my cane and I can't get up")
     text2 = string("What should i do. ##1. I help her of course#2. Forget that")
     textvalg1 = string("Ok. Wait here and I will get your cane")
     textvalg2 = string("Screw that")
-    }
+    
  
-    if(keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Receptionist_obj) &lt; 10)
-    {
-    text5 = string("Welcome to the 4Sins HoteL.# What can I do for you?")
-    text6 = string("Hi, I'm looking for the resturant.# Could you show me the way?")
-    text7 = string("Sure, but before I help you,#I need you too understand and follow#the rules of this hotel.")
-    text8 = string("The rules are simple.#You behave nicely, and we won't kick you out.#Is that clear?")
-    text9 = string("Z.Be Nice#X.Question the rules#C.Be sincere#V.Joke")
-    textvalg3 = string ("Sure, I understand.#I can respect that.")
-    textvalg4 = string("Do I have to?")
-    textvalg5 = string ("Ok, but i won't promise that,#I'll behave as well as you like.")
-    textvalg6 = string ("Ok, but i am just going to#meet my partner at the resturant.#It's not like I'm going to cause chaos.")
-    textRespons1 = string("Thank you.#The resturant is on the roof of the building")
-    textRespons2 = string("That's not good enough.#Behave or get tossed out")
-    textRespons3 = string("You will behave according to the rules.#The resturant is on the roof")
-    }
+    //if(keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Receptionist_obj) &lt; 10)
+    //{
+    //text5 = string("Welcome to the 4Sins HoteL.# What can I do for you?")
+    //text6 = string("Hi, I'm looking for the resturant.# Could you show me the way?")
+    //text7 = string("Sure, but before I help you,#I need you too understand and follow#the rules of this hotel.")
+    //text8 = string("The rules are simple.#You behave nicely, and we won't kick you out.#Is that clear?")
+    //text9 = string("Z.Be Nice#X.Question the rules#C.Be sincere#V.Joke")
+    //textvalg3 = string ("Sure, I understand.#I can respect that.")
+    //textvalg4 = string("Do I have to?")
+    //textvalg5 = string ("Ok, but i won't promise that,#I'll behave as well as you like.")
+    //textvalg6 = string ("Ok, but i am just going to#meet my partner at the resturant.#It's not like I'm going to cause chaos.")
+    //textRespons1 = string("Thank you.#The resturant is on the roof of the building")
+    //textRespons2 = string("That's not good enough.#Behave or get tossed out")
+    //textRespons3 = string("You will behave according to the rules.#The resturant is on the roof")
+    //}
     
 //Talk er presat til at være 1
-talk = 1;
+
 //Global.text bruges for at stoppe bevægelse af spilleren under textbox
-global.text = true;
+//global.text = true;
 
 //out er outputet som indsætter strings i textboxen
 out = string("");
@@ -114,19 +113,17 @@ global.text = false;
             <string>/// Dialog_Textbox_Control
 
 
-spd +=2
+spd += 2;
 
-if distance_to_object(Fatlady_obj) {
 
-talk = 1
+if distance_to_object(Fatlady_obj) &amp;&amp; keyboard_check_pressed(vk_space) {
+
 
 if (talk == 1) {
 if (keyboard_check_pressed(vk_space)) {
-talk +=1
-
+talk = talk++;
 }
 out = string_copy(text1,1,spd)
-
 }
 
 if (talk == 2) {
@@ -141,17 +138,19 @@ if (talk == 2) {
 
 if keyboard_check_pressed(ord("Z"))  {
 out = string_copy(textvalg1,1,spd)
-talk +=1
+talk = talk++;
 }
 
 if keyboard_check_pressed(ord("X"))  {
 out = string_copy(textvalg2,1,spd)
-talk +=1
-}}
+talk = talk ++;
+}
+
+}
 
 if (talk == 3) {
 if (keyboard_check_pressed(vk_space)) {
-talk +=1
+talk = talk++;
 }
 }
 
@@ -161,110 +160,111 @@ instance_destroy()
 }
 }
 
-if (keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Receptionist_obj) &lt; 10){
 
-talk = 4
-talk += 1
 
-if (talk == 5) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
+//if (keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Receptionist_obj) &lt; 10){
 
-}
-out = string_copy(text5,1,spd)
-}
+//talk += 1
 
-if (talk == 6) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
+//if (talk == 5) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
 
-}
-out = string_copy(text6,1,spd)
-}
+//}
+//out = string_copy(text5,1,spd)
+//}
 
-if (talk == 7) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
+//if (talk == 6) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
 
-}
-out = string_copy(text7,1,spd)
-}
+//}
+//out = string_copy(text6,1,spd)
+//}
 
-if (talk == 8) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
+//if (talk == 7) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
 
-}
-out = string_copy(text8,1,spd)
-}
+//}
+//out = string_copy(text7,1,spd)
+//}
 
-if (talk == 9) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
+//if (talk == 8) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
 
-}
-out = string_copy(text9,1,spd)
-}
+//}
+//out = string_copy(text8,1,spd)
+//}
 
-if (keyboard_check_pressed(ord("Z")) &amp;&amp; distance_to_object(Receptionist_obj))  {
-out = string_copy(textvalg3,1,spd)
-talk +=1
-}
+//if (talk == 9) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
 
-if (keyboard_check_pressed(ord("X")) &amp;&amp; distance_to_object(Receptionist_obj))  {
-out = string_copy(textvalg4,1,spd)
-talk +=1
-}
+//}
+//out = string_copy(text9,1,spd)
+//}
 
-if (keyboard_check_pressed(ord("C")) &amp;&amp; distance_to_object(Receptionist_obj))  {
-out = string_copy(textvalg5,1,spd)
-talk +=1
-}
+//if (keyboard_check_pressed(ord("Z")) &amp;&amp; distance_to_object(Receptionist_obj))  {
+//out = string_copy(textvalg3,1,spd)
+//talk +=1
+//}
 
-if (keyboard_check_pressed(ord("V")) &amp;&amp; distance_to_object(Receptionist_obj))  {
-out = string_copy(textvalg6,1,spd)
-talk +=1
-}
+//if (keyboard_check_pressed(ord("X")) &amp;&amp; distance_to_object(Receptionist_obj))  {
+//out = string_copy(textvalg4,1,spd)
+//talk +=1
+//}
 
-if (talk == 10) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-}
-}
+//if (keyboard_check_pressed(ord("C")) &amp;&amp; distance_to_object(Receptionist_obj))  {
+//out = string_copy(textvalg5,1,spd)
+//talk +=1
+//}
 
-if (talk == textvalg3) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-talk = textRespons1
-}
-}
+//if (keyboard_check_pressed(ord("V")) &amp;&amp; distance_to_object(Receptionist_obj))  {
+//out = string_copy(textvalg6,1,spd)
+//talk +=1
+//}
 
-if (talk == textvalg4) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-talk = textRespons2
-}
-}
+//if (talk == 10) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
+//}
+//}
 
-if (talk == textvalg5) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-talk = textRespons2
-}
-}
+//if (talk == textvalg3) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
+//talk = textRespons1
+//}
+//}
 
-if (talk == textvalg6) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-talk = textRespons3
-}
-}
+//if (talk == textvalg4) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
+//talk = textRespons2
+//}
+//}
 
-if talk &gt;= 11 {
+//if (talk == textvalg5) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
+//talk = textRespons2
+//}
+//}
+
+//if (talk == textvalg6) {
+//if (keyboard_check_pressed(vk_space)) {
+//talk +=1
+//talk = textRespons3
+//}
+//}
+
+//if talk &gt;= 11 {
     
-instance_destroy()
-}
-}
+//instance_destroy()
+//}
+//}
 </string>
           </argument>
         </arguments>
@@ -291,27 +291,6 @@ instance_destroy()
 draw_set_font(font_Default)
 draw_set_valign(fa_top)
 draw_set_halign(fa_left)
-
-if talk = 1 {
-
-draw_set_colour(c_red)
-}
-
-if talk = 2 {
-
-draw_set_colour(c_green)
-}
-
-if  (keyboard_check_pressed(ord("Z")) &amp;&amp; talk = 3) {
-
-draw_set_colour(c_blue)
-}
-
-if (keyboard_check_pressed(ord("X")) &amp;&amp; talk = 3) {
-
-draw_set_colour(c_maroon)
-
-}
 
 
 

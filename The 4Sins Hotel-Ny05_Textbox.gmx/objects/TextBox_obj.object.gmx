@@ -29,16 +29,12 @@
 
 if keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10
 {
-text1 = string("Hello")
-text2 = string("How are you?")
-text3 = string("Good thank you")
+text1 = string("Please help me. #I lost my cane and I can't get up")
+    text2 = string("What should i do. ##1. I help her of course#2. Forget that")
+    textvalg1 = string("Ok. Wait here and I will get your cane")
+    textvalg2 = string("Screw that")
 }
-else if keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &gt; 10
-{
-text1 = string("MIB")
-text2 = string("How are you?")
-text3 = string("I like me")
-}
+
 talk = 1
 
 global.text = true
@@ -93,25 +89,31 @@ spd = 0
             <string>/// Dialog_Textbox_Control
 if talk = 1 {
 out = string_copy(text1,1,spd)
-colour_get_blue(1)
+
 }
 
 if talk = 2 {
 out = string_copy(text2,1,spd)
-colour_get_green(1)
+
 }
 
-if talk = 3 {
-out = string_copy(text3,1,spd)
-colour_get_red(1)
+if talk == 2 &amp;&amp; keyboard_check_pressed(ord("Z")) {
+out = string_copy(textvalg1,1,spd)
+talk +=1
 }
 
+if talk == 2 &amp;&amp; keyboard_check_pressed(ord("X")) {
+out = string_copy(textvalg2,1,spd)
+talk+=1
+
+}
 spd +=2
 
 if keyboard_check_pressed(vk_space) {
 talk +=1
 spd = 0
 }
+
 
 if talk &gt; 3 
     instance_destroy()

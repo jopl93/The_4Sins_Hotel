@@ -26,26 +26,21 @@
           <argument>
             <kind>1</kind>
             <string>/// Dialog_text
-global.dialog = 0
-//Hvis brugeren trykker space ned, og er mindre end 10 pixels fra den fede dame
-if (keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10)
+
+if keyboard_check_pressed(vk_space) &amp;&amp; distance_to_object(Fatlady_obj) &lt; 10
 {
 text1 = string("Please help me. #I lost my cane and I can't get up")
-text2 = string("What should i do. ##1. I help her of course#2. Forget that")
-textvalg1 = string("Ok. Wait here and I will get your cane")
-textvalg2 = string("Screw that")
+    text2 = string("What should i do. ##1. I help her of course#2. Forget that")
+    textvalg1 = string("Ok. Wait here and I will get your cane")
+    textvalg2 = string("Screw that")
 }
 
-//Talk er presat til at være 1
-talk = 1;
-//Global.text bruges for at stoppe bevægelse af spilleren under textbox
-global.text = true;
+talk = 1
 
-//out er outputet som indsætter strings i textboxen
-out = string("");
+global.text = true
 
-//spd er speed af texten presat til 0
-spd = 0;
+out = string("")
+spd = 0
 </string>
           </argument>
         </arguments>
@@ -68,9 +63,7 @@ spd = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//Spilleren kan bevæge sig igen
-global.text = false;
+            <string>global.text = false
 </string>
           </argument>
         </arguments>
@@ -94,53 +87,37 @@ global.text = false;
           <argument>
             <kind>1</kind>
             <string>/// Dialog_Textbox_Control
-
-spd +=2
-
-if global.dialog = 0
-{
-if (talk == 1) {
-if (keyboard_check_pressed(vk_space)) {
-talk +=1
-}
+if talk = 1 {
 out = string_copy(text1,1,spd)
-colour_get_blue(1)
+
 }
 
-if (talk == 2) {
-
+if talk = 2 {
 out = string_copy(text2,1,spd)
-colour_get_green(1)
+
 }
 
-
-if (talk == 2) {
-
-
-if keyboard_check_pressed(ord("Z"))  {
+if talk == 2 &amp;&amp; keyboard_check_pressed(ord("Z")) {
 out = string_copy(textvalg1,1,spd)
 talk +=1
-
 }
 
-if keyboard_check_pressed(ord("X"))  {
+if talk == 2 &amp;&amp; keyboard_check_pressed(ord("X")) {
 out = string_copy(textvalg2,1,spd)
+talk+=1
+
+}
+spd +=2
+
+if keyboard_check_pressed(vk_space) {
 talk +=1
-
-}
-}
-
+spd = 0
 }
 
 
-if textvalg1 {
+if talk &gt; 3 
     instance_destroy()
-    talk +=1
-}
-if talk = 5 {
-global.dialog = +1
-}
-
+    
 </string>
           </argument>
         </arguments>
@@ -172,8 +149,6 @@ draw_set_halign(fa_left)
 
 draw_sprite(TextBox_spr,0,view_xview[1],view_yview[1])
 draw_text(view_xview[1]+15,view_yview[1] + 15,out)
-
-
 
 </string>
           </argument>

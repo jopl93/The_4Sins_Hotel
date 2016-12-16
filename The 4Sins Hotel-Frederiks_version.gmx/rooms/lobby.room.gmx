@@ -56,6 +56,7 @@
     <instance objName="Spiller" x="928" y="224" name="inst_DB85540E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="forward_stairs" x="1152" y="192" name="inst_DC219FFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="Fatlady_obj" x="1056" y="224" name="inst_7C07259A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="Receptionist_obj" x="288" y="192" name="inst_A5BED6AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="background0" x="672" y="32" w="32" h="32" xo="64" yo="32" id="10000485" name="inst_8E4EE557" depth="1001001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

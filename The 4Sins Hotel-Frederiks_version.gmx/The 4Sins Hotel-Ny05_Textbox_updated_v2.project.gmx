@@ -57,7 +57,9 @@
     <object>objects\barometercontroller_obj</object>
     <object>objects\controller_obj</object>
     <object>objects\Fatlady_obj</object>
-    <object>objects\TextBox_obj</object>
+    <object>objects\TextBox2_obj</object>
+    <object>objects\Textbox1_obj</object>
+    <object>objects\Receptionist_obj</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\lobby</room>
